@@ -15,6 +15,7 @@
         margin: 0 auto;
         font-family: monospace;
         margin-top: 40px;
+        margin-bottom: 80px;
         border: 1.5px solid black;
         border-radius: 40px;
       }
@@ -25,64 +26,84 @@
       }
       .numberCount {
         text-align: center;
-        margin: 190px;
-        margin-top: 120px;
-        padding: 100px 20px;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 100px 20px; 
         background-color: transparent;
         border: 1.5px solid black;
        border-radius: 5px;
         height: 100px;
         font-size: 70px;
-      }
+        margin-bottom: 80px; 
+      }  
       .credit {
         text-align: center;
         margin-top: 60px; 
       }
-      .options {
-        list-style: none;
-        display: flex;
-        align-content: center; 
-       justify-content:space-evenly;
-      
+     
+.options{
+  display: flex; 
+  text-align: center;
+  list-style: none; 
+
+ max-width: 600%;
+ justify-content: space-between;
+
+
+}
          
-      }
+      
       .increase {
-        padding: 10px;
-        border: 1.5px solid black; 
         padding: 20px;
+        border: 1.5px solid black; 
+         
                border-radius: 5px;
+             
+              
 
         
       }
       .decrease {
-        padding: 10px;
+        padding: 20px;
         border: 1.5px solid black;  
-                padding: 20px;
+                
+                       border-radius: 5px;
+                       margin-right: 100px;
+                       margin-left: 100px;
+                       
+                     
+      }
+      .reset {
+        padding: 20px 30.73px; 
+        border: 1.5px solid black; 
+                
                        border-radius: 5px;
 
 
       }
-      .reset {
-        padding: 10px;
-        border: 1.5px solid black; 
-                padding: 20px;
-                       border-radius: 5px;
-
-
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 40px; 
       }
 
     </style>
   </head>
-  <body>
+  <body> 
+    <div class="container">
     <h1>Counter ⏱</h1>
     <p class="numberCount">0</p>
+ 
+  <div class="optionsContainer">
     <ul class="options">
-      <div class="increase"><li>Increase</li></div>
-      <div class="decrease""><li>Decrease</li></div>
-      <div class="reset""><li>Reset</li></div>
+      <li><div class="increase">Increase</div></li>
+      <li><div class="decrease">Decrease</div></li>  
+      <li><div class="reset">Reset</div></li>
     </ul>
+    </div>
     <div class="credit">Coded by Lupita Lua</div>
 
     <script></script>
+  </div> 
   </body>
 </html>
