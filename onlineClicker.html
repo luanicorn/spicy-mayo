@@ -31,10 +31,10 @@
        margin-left: 40px;          
        
         max-width: 100%;
-        padding: 100px 20px; 
+        padding: 50px 20px; 
         background-color: transparent;
         border: 5px solid black;
-       border-radius: 100%;
+       border-radius: 5px;
         height: 100px;
         font-size: 70px;
         margin-bottom: 80px;  
@@ -102,29 +102,43 @@
       }
       .up {
         font-size: 60px;
+        transition: all 150ms ease;  
+      
+          
              
       }    
       .up:hover {
         cursor: pointer;
+        text-shadow: 0 -0.5rem 1rem #f5f2e9, 0 0.5rem 1rem #999;
+      
       }
       .down {
         font-size: 60px; 
+        transition: all 150ms ease;
       }
       .down:hover {
-        cursor: pointer;
+        cursor: pointer; 
+        text-shadow: 0 -0.5rem 1rem #f5f2e9, 0 0.5rem 1rem #999; 
+        
       }
       .startAgain {
         font-size: 60px;
+        transition: all 150ms ease;  
       }
       .startAgain:hover {
         cursor: pointer;
+        text-shadow: 0 -0.5rem 1rem #f5f2e9, 0 0.5rem 1rem #999;      
+      }
+      .emoji {
+       filter: contrast(0);
+      filter: sepia(100%);        
       }
 
     </style>
   </head>
   <body> 
     <div class="container">
-    <h1>Online Clicker ⏱</h1>
+    <h1>Online Clicker <span class="emoji">⏱</span></h1>
     <div class="containerTwo">
       <p class="numberCount">
         0
