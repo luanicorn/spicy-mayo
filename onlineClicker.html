@@ -104,11 +104,20 @@
         font-size: 60px;
              
       }    
+      .up:hover {
+        cursor: pointer;
+      }
       .down {
         font-size: 60px; 
       }
+      .down:hover {
+        cursor: pointer;
+      }
       .startAgain {
         font-size: 60px;
+      }
+      .startAgain:hover {
+        cursor: pointer;
       }
 
     </style>
@@ -116,7 +125,11 @@
   <body> 
     <div class="container">
     <h1>Online Clicker ⏱</h1>
-    <div class="containerTwo"><p class="numberCount">0</p></div>
+    <div class="containerTwo">
+      <p class="numberCount">
+        0
+      </p>
+    </div>
  
   <div class="optionsContainer">
     <ul class="options">
@@ -127,7 +140,27 @@
     </div>
     <div class="credit"><strong>Coded by Lupita Lua</strong></div>
 
-    <script></script>
+    <script> 
+
+    function increaseButton() {
+    
+    }
+
+    function decreaseButton() {
+
+    }
+
+    function resetButton() {
+
+    }
+
+    let numberCount = document.querySelector("numberCount"); 
+    let up = document.querySelector("up"); 
+    let down = document.querySelector("down");
+    let startAgain =document.querySelector("startAgain"); 
+    
+    
+    </script>
   </div> 
   </body>
-</html>
+</html>    
